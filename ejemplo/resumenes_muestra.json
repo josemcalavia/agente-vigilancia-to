@@ -1,0 +1,41 @@
+{
+  "decision": {
+    "publicar": true
+  },
+  "secciones": {},
+  "articulos": {
+    "1": {
+      "resumen": "DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. ",
+      "porque_importa": "Frase de ejemplo sobre por qué este trabajo le importa a una terapeuta ocupacional que decide qué cambiar en su práctica.",
+      "temas": [
+        "ejemplo",
+        "maqueta"
+      ]
+    },
+    "2": {
+      "resumen": "DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. ",
+      "porque_importa": "Frase de ejemplo sobre por qué este trabajo le importa a una terapeuta ocupacional que decide qué cambiar en su práctica.",
+      "temas": [
+        "ejemplo",
+        "maqueta"
+      ],
+      "relevancia": "Nota de cautela de ejemplo: estudio piloto con pocos participantes."
+    },
+    "3": {
+      "resumen": "DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. ",
+      "porque_importa": "Frase de ejemplo sobre por qué este trabajo le importa a una terapeuta ocupacional que decide qué cambiar en su práctica.",
+      "temas": [
+        "ejemplo",
+        "maqueta"
+      ]
+    },
+    "4": {
+      "resumen": "DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. DATOS FICTICIOS. Este resumen solo sirve para ver la estética del boletín. En un número real, aquí va un resumen en español de entre 180 y 220 palabras: qué se estudia, con quién, qué se encuentra y con qué limitaciones. El texto se justifica y ocupa buena parte de la página, así que conviene comprobar que la tipografía elegida se lee con comodidad y que los colores de los recuadros no cansan. ",
+      "porque_importa": "Frase de ejemplo sobre por qué este trabajo le importa a una terapeuta ocupacional que decide qué cambiar en su práctica.",
+      "temas": [
+        "ejemplo",
+        "maqueta"
+      ]
+    }
+  }
+}

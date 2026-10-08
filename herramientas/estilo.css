@@ -1,0 +1,119 @@
+/* Maqueta del boletin. Los colores y las tipografias NO se tocan aqui: salen
+   del perfil (perfil.json -> estetica) y se inyectan en :root como variables.
+   Agente de vigilancia en TO. Diseno original: José María Calavia Balduz. */
+__FUENTES__
+@page{size:A4;margin:30mm 22mm 24mm 22mm}
+:root{__VARIABLES__}
+*{box-sizing:border-box}
+html{background:#fff}
+body{margin:0;padding:0;background:#fff;color:var(--texto);
+     font-family:var(--f-txt);font-size:10.5pt;line-height:1.6;
+     -webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3{font-family:var(--f-tit)}
+.saltop{page-break-before:always}
+
+/* --- cabecera y pie: van en su propio PDF y se estampan en cada pagina --- */
+.sello{position:relative;width:210mm;height:297mm;background:transparent;page-break-after:always;overflow:hidden}
+.sello:last-child{page-break-after:auto}
+.scab{position:absolute;top:13mm;left:22mm;right:22mm;height:11mm;
+      border-bottom:0.6pt solid var(--suave);display:flex;align-items:flex-end;
+      justify-content:space-between;padding-bottom:2.5mm;gap:6mm}
+.scab .t{font-family:var(--f-tit);font-weight:600;font-size:9pt;color:var(--primario);
+         letter-spacing:0.3px}
+.scab img{max-height:8mm;max-width:40mm;display:block}
+.spie{position:absolute;bottom:11mm;left:22mm;right:22mm;
+      border-top:0.6pt solid var(--suave);padding-top:2.5mm;
+      font-size:8pt;color:var(--secundario);display:flex;justify-content:space-between;gap:6mm}
+
+/* --------------------------------- portada --------------------------------- */
+.pcont{padding:30mm 24mm 18mm 24mm;min-height:297mm;display:flex;flex-direction:column;background:var(--fondo)}
+.pcont .logo{max-width:70mm;max-height:32mm;margin:0 0 16mm 0;display:block}
+.banda{height:5mm;background:var(--primario);margin:-30mm -24mm 24mm -24mm}
+.cabecera-numero{font-family:var(--f-tit);font-weight:600;font-size:10pt;letter-spacing:2.4px;
+                 text-transform:uppercase;color:var(--secundario);margin:0 0 5mm 0}
+.pcont h1{font-size:28pt;font-weight:700;color:var(--primario);line-height:1.15;margin:0 0 5mm 0}
+.psub{font-size:12.5pt;color:var(--secundario);font-family:var(--f-tit);margin:0 0 11mm 0}
+.regla{width:34mm;height:3px;background:var(--acento);border-radius:2px;margin:0 0 11mm 0}
+.pmeta{font-size:10.5pt;line-height:1.85}
+.pmeta b{font-family:var(--f-tit);font-weight:600;color:var(--primario)}
+.cifras{display:flex;gap:5mm;margin:10mm 0 0 0}
+.cifra{flex:1;background:#fff;border:0.6pt solid var(--suave);border-radius:3mm;padding:4.5mm 3.5mm}
+.cifra .n{font-family:var(--f-tit);font-weight:700;font-size:21pt;color:var(--primario);line-height:1}
+.cifra .l{font-size:8.2pt;color:var(--secundario);margin-top:2mm;line-height:1.35}
+.pfoot{margin-top:auto;font-size:9pt;color:var(--secundario);border-top:0.6pt solid var(--suave);padding-top:4mm;line-height:1.5}
+.pfoot .editor{font-family:var(--f-tit);font-weight:600;color:var(--primario);font-size:10pt}
+.pfoot .agente{margin-top:2.5mm;font-size:8.5pt}
+
+/* -------------------------------- secciones -------------------------------- */
+h2.sec{font-weight:700;font-size:18pt;color:var(--primario);margin:0 0 5mm 0}
+.intro{font-size:10.5pt;margin:0 0 8mm 0}
+.intro p{margin:0 0 3mm 0}
+.presentacion p{margin:0 0 3.2mm 0;text-align:justify}
+.aviso{background:var(--tinte);border-left:3px solid var(--secundario);border-radius:0 2mm 2mm 0;
+       padding:4mm 5mm;font-size:9.5pt;margin:8mm 0 0 0;break-inside:avoid}
+.aviso b{font-family:var(--f-tit);font-weight:600;color:var(--primario);display:block;margin-bottom:1.5mm}
+.recuento{display:flex;flex-wrap:wrap;gap:2.5mm;margin:5mm 0 6mm 0;break-inside:avoid}
+.recuento > div{flex:1 1 30%;display:flex;justify-content:space-between;align-items:baseline;
+                border:0.6pt solid var(--suave);border-radius:2mm;padding:2.5mm 3.5mm;gap:3mm}
+.recuento .c{font-size:8.8pt;line-height:1.3}
+.recuento .n{font-family:var(--f-tit);font-weight:700;font-size:13pt;color:var(--acento);line-height:1}
+
+/* ------------------------------ indice ------------------------------------- */
+.catbloque{margin:0 0 4.5mm 0;border:0.6pt solid var(--suave);border-radius:3mm;padding:3.8mm 5.5mm;break-inside:avoid}
+.catbloque h3{font-weight:600;font-size:12pt;color:var(--primario);margin:0 0 3mm 0;
+              display:flex;justify-content:space-between;align-items:baseline}
+.cuenta{font-family:var(--f-txt);font-weight:400;font-size:9pt;color:var(--secundario)}
+.catbloque ol{margin:0;padding-left:0;list-style:none}
+.catbloque li{font-size:9.5pt;line-height:1.42;padding:1.1mm 0;border-bottom:0.4pt solid var(--linea);display:flex;gap:3mm}
+.catbloque li:last-child{border-bottom:none}
+.catbloque li .num{font-family:var(--f-tit);font-weight:600;color:var(--secundario);min-width:7mm}
+
+/* ------------------------------ secciones fijas ---------------------------- */
+.destacado{border:0.6pt solid var(--suave);border-radius:3mm;padding:5mm 6mm;margin:0 0 5mm 0;break-inside:avoid}
+.destacado h3{font-weight:600;font-size:12.5pt;color:var(--primario);margin:0 0 1.5mm 0;
+              display:flex;align-items:baseline;gap:3mm}
+.destacado h3 .marca{width:3.6mm;height:3.6mm;border-radius:50%;background:var(--acento);flex-shrink:0}
+.destacado .rotulo{font-size:8.6pt;color:var(--secundario);font-style:italic;margin:0 0 2.5mm 0}
+.destacado p{margin:0 0 2.6mm 0;font-size:10pt;line-height:1.55;text-align:justify}
+.destacado p:last-child{margin-bottom:0}
+.destacado .ref{font-size:8.8pt;color:var(--secundario);font-style:italic}
+
+/* --------------------------------- fichas ---------------------------------- */
+.ficha{border:0.6pt solid var(--suave);border-radius:3mm;padding:5mm 5.5mm 4.5mm 5.5mm;
+       break-inside:avoid;page-break-after:always}
+.ficha:last-of-type{page-break-after:auto}
+.ficha .cabf{display:flex;gap:4mm;align-items:baseline;margin-bottom:1mm}
+.ficha .n{font-family:var(--f-tit);font-weight:700;font-size:17pt;color:var(--acento);line-height:1;min-width:10mm}
+.ficha h3{font-weight:600;font-size:13pt;color:var(--primario);margin:0;line-height:1.28}
+.meta{font-size:9pt;color:var(--secundario);margin:1mm 0 3mm 14mm;line-height:1.45}
+.meta .rev{font-style:italic}
+.meta .cuartil{display:inline-block;background:var(--primario);color:#fff;font-family:var(--f-tit);
+               font-weight:600;font-size:7.4pt;padding:0.3mm 1.6mm;border-radius:1.5mm;margin-left:1.8mm}
+.cuerpo{margin-left:14mm}
+.cuerpo p{margin:0 0 2.6mm 0;text-align:justify;font-size:10pt;line-height:1.5}
+.tag{display:inline-block;background:var(--tinte);color:var(--primario);font-family:var(--f-tit);font-weight:600;
+     font-size:7.8pt;letter-spacing:0.6px;text-transform:uppercase;padding:1mm 3mm;border-radius:10mm;margin:0 1.5mm 3mm 0}
+.importa{background:var(--tinte);border-left:3px solid var(--secundario);border-radius:0 2mm 2mm 0;
+         padding:2.6mm 3.5mm;margin:0 0 2.6mm 0;font-size:9.5pt;line-height:1.45}
+.importa b{font-family:var(--f-tit);font-weight:600;color:var(--primario);display:block;margin-bottom:1mm;
+           font-size:8.3pt;letter-spacing:0.5px;text-transform:uppercase}
+.confirmar{background:var(--tinte-acento);border-left:3px solid var(--acento);padding:2.2mm 3.5mm;font-size:9pt;
+           line-height:1.4;margin:0 0 2.6mm 0;border-radius:0 2mm 2mm 0}
+.notapdf{font-size:8.8pt;color:var(--secundario);font-style:italic;margin:-1mm 0 3mm 0}
+.acc{border-top:0.5pt solid var(--linea);padding-top:3mm;margin-top:1mm;display:flex;align-items:baseline;gap:4mm;flex-wrap:wrap}
+.acc .enlace{font-size:8.8pt;word-break:break-word}
+.acc .enlace a{color:var(--primario);text-decoration:none}
+.acc .enlace .k{font-family:var(--f-tit);font-weight:600;color:var(--secundario);margin-right:2mm}
+.badge{display:inline-block;font-family:var(--f-tit);font-weight:600;font-size:8pt;padding:1mm 3mm;border-radius:2mm;flex-shrink:0}
+.badge-ab{background:var(--primario);color:#fff}
+.badge-ce{background:var(--linea);color:var(--texto);border:0.5pt solid var(--suave)}
+.catsep{margin:0 0 4mm 0;padding-bottom:1.8mm;border-bottom:1.5pt solid var(--suave);break-after:avoid;break-inside:avoid}
+.catsep h2{font-weight:700;font-size:14pt;color:var(--primario);margin:0;display:flex;justify-content:space-between;align-items:baseline}
+
+/* ------------------------------- cierre ------------------------------------ */
+.decl{border:0.6pt solid var(--suave);border-radius:3mm;padding:4.5mm 5mm;margin-top:7mm;
+      font-size:8.8pt;line-height:1.5;background:var(--fondo);break-inside:avoid}
+.decl b{font-family:var(--f-tit);font-weight:600;color:var(--primario);display:block;margin-bottom:1.5mm;font-size:9.2pt}
+.colofon{margin-top:10mm;font-size:9pt;line-height:1.6;color:var(--secundario);break-inside:avoid}
+.colofon p{margin:0 0 2.5mm 0}
+.colofon b{color:var(--primario)}

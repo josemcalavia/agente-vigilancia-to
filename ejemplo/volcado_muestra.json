@@ -1,0 +1,70 @@
+{
+  "buscado_desde": "2026-01-01",
+  "fuentes_consultadas": {
+    "PubMed": 1,
+    "OpenAlex": 1
+  },
+  "articles": [
+    {
+      "title": "Artículo de ejemplo 1: título ficticio para ver cómo queda la maqueta de una ficha",
+      "authors": [
+        "Apellido A",
+        "Apellido B",
+        "Apellido C"
+      ],
+      "journal": "Revista de Ejemplo",
+      "year": "2026",
+      "doi": "10.0000/ejemplo.1",
+      "source": "PubMed",
+      "is_oa": true,
+      "enlace_articulo": "https://doi.org/10.0000/ejemplo",
+      "categoria": ""
+    },
+    {
+      "title": "Artículo de ejemplo 2: título ficticio para ver cómo queda la maqueta de una ficha",
+      "authors": [
+        "Apellido A",
+        "Apellido B",
+        "Apellido C"
+      ],
+      "journal": "Revista de Ejemplo",
+      "year": "2026",
+      "doi": "10.0000/ejemplo.2",
+      "source": "PubMed",
+      "is_oa": false,
+      "enlace_articulo": "https://doi.org/10.0000/ejemplo",
+      "categoria": ""
+    },
+    {
+      "title": "Artículo de ejemplo 3: título ficticio para ver cómo queda la maqueta de una ficha",
+      "authors": [
+        "Apellido A",
+        "Apellido B",
+        "Apellido C"
+      ],
+      "journal": "Revista de Ejemplo",
+      "year": "2026",
+      "doi": "10.0000/ejemplo.3",
+      "source": "PubMed",
+      "is_oa": true,
+      "enlace_articulo": "https://doi.org/10.0000/ejemplo",
+      "categoria": ""
+    },
+    {
+      "title": "Artículo de ejemplo 4: título ficticio para ver cómo queda la maqueta de una ficha",
+      "authors": [
+        "Apellido A",
+        "Apellido B",
+        "Apellido C"
+      ],
+      "journal": "Revista de Ejemplo",
+      "year": "2026",
+      "doi": "10.0000/ejemplo.4",
+      "source": "PubMed",
+      "is_oa": false,
+      "enlace_articulo": "https://doi.org/10.0000/ejemplo",
+      "categoria": ""
+    }
+  ],
+  "suplentes": []
+}

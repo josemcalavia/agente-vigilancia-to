@@ -1,0 +1,72 @@
+{
+  "_nota": "Ejemplo de perfil. El agente crea perfil.json en la primera ejecución a partir de tus respuestas; no hace falta editar esto a mano.",
+  "boletin": {
+    "titulo": "Vigilancia TO en neurorrehabilitación",
+    "subtitulo": "Boletín de seguimiento científico en Terapia Ocupacional"
+  },
+  "editor": {
+    "nombre": "Nombre Apellido",
+    "institucion": "Servicio o centro (opcional)",
+    "contacto": "web o correo (opcional)",
+    "logo": "estilo/mi_logo.png"
+  },
+  "tema": "Neurorrehabilitación",
+  "ambitos": [
+    {
+      "nombre": "Ictus",
+      "criterio": "Intervención o evaluación de TO en personas tras un ictus, en cualquier fase.",
+      "terminos_en": ["stroke", "cerebrovascular accident", "hemiplegia", "hemiparesis"],
+      "terminos_es": ["ictus", "accidente cerebrovascular", "hemiplejia", "hemiparesia"],
+      "terminos_pt": ["acidente vascular cerebral", "hemiplegia"]
+    },
+    {
+      "nombre": "Daño cerebral adquirido",
+      "criterio": "Traumatismo craneoencefálico y otras lesiones cerebrales adquiridas.",
+      "terminos_en": ["traumatic brain injury", "acquired brain injury", "brain injury"],
+      "terminos_es": ["daño cerebral adquirido", "traumatismo craneoencefálico"],
+      "terminos_pt": ["lesão cerebral adquirida", "traumatismo cranioencefálico"]
+    },
+    {
+      "nombre": "Lesión medular",
+      "criterio": "Personas con lesión medular: autonomía, productos de apoyo, participación.",
+      "terminos_en": ["spinal cord injury", "tetraplegia", "paraplegia"],
+      "terminos_es": ["lesión medular", "tetraplejia", "paraplejia"],
+      "terminos_pt": ["lesão medular", "tetraplegia", "paraplegia"]
+    }
+  ],
+  "filtro_comun": null,
+  "criterio_general": "Entra si la TO es el foco del trabajo (no una profesión citada de pasada) y el trabajo trata de verdad uno de los ámbitos. Fuera: estudios médicos o farmacológicos sin intervención ocupacional.",
+  "n_articulos": 10,
+  "n_suplentes": 5,
+  "periodo_dias": 30,
+  "titulo_secciones": "Destacados del número",
+  "secciones": [
+    {"clave": "articulo_del_numero", "titulo": "El artículo del número",
+     "subtitulo": "El que leerías si solo pudieras leer uno.",
+     "pauta": "Elige un artículo y explica por qué merece la lectura completa."},
+    {"clave": "toca_la_practica", "titulo": "Lo que toca la práctica",
+     "subtitulo": "Hallazgos que confirman o mueven algo del trabajo diario.",
+     "pauta": "Qué confirma o cambia algo de la intervención habitual."},
+    {"clave": "en_el_radar", "titulo": "En el radar",
+     "subtitulo": "Protocolos y pilotos que todavía no son evidencia.",
+     "pauta": "Lo prometedor pero inmaduro, dicho como tal."},
+    {"clave": "para_empezar", "titulo": "Para empezar por algo pequeño",
+     "subtitulo": "Una sola cosa concreta para esta semana.",
+     "pauta": "Una acción pequeña y realista que se pueda probar ya."}
+  ],
+  "seguimiento": true,
+  "presentacion": null,
+  "estetica": {
+    "plantilla": "azul",
+    "colores": {},
+    "fuente_titulos": null,
+    "fuente_texto": null,
+    "archivo_fuente_titulos": null,
+    "archivo_fuente_texto": null,
+    "banda_portada": true
+  },
+  "descargar_pdf": false,
+  "email_apis": "tu_correo@ejemplo.com",
+  "fuentes": {"pubmed": true, "europepmc": true, "openalex": true, "crossref": true, "semanticscholar": true, "arxiv": false, "doaj": false, "scopus": false, "wos": false, "ieee": false, "consensus": false},
+  "carpeta_boletines": null
+}
